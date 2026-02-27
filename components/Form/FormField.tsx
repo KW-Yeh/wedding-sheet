@@ -81,16 +81,16 @@ export default function FormField({ field, value, error, onChange }: FormFieldPr
   return (
     <div className="space-y-1.5">
       {field.type !== 'checkbox' && (
-        <label htmlFor={field.id} className="block text-sm font-medium text-gray-700">
+        <label htmlFor={field.id} className="block text-base font-medium text-gray-700">
           {field.label}
           {field.required && <span className="ml-1 text-rose-500">*</span>}
         </label>
       )}
       {renderInput()}
       {field.helperText && !error && (
-        <p className="text-xs text-gray-500">{field.helperText}</p>
+        <p className="text-sm text-gray-500">{field.helperText}</p>
       )}
-      {error && <p className="text-xs text-red-500">{error}</p>}
+      {error && <p className="text-sm text-red-500">{error}</p>}
     </div>
   )
 }
