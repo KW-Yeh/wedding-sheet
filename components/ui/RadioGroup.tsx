@@ -19,7 +19,7 @@ export default function RadioGroup({ name, options, value, onChange, error }: Ra
               ? 'border-rose-400 bg-rose-50 text-rose-700 font-medium'
               : error
               ? 'border-red-300 hover:border-red-400'
-              : 'border-gray-300 hover:border-rose-300'
+              : 'border-gray-300 text-gray-800 hover:border-rose-300'
           }`}
         >
           <input
