@@ -26,10 +26,10 @@ export default function HomePage() {
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-hero">
         <div className="w-full grid grid-cols-12 gap-6">
           <div className="lg:col-span-7 gap-12 flex items-center flex-col col-span-12 p-5">
-            <h1 className="text-8xl whitespace-nowrap -rotate-8 mb-12 text-black text-shadow-[6px_6px_0px_rgba(0,0,0,0.2)]">
+            <h1 className="text-6xl lg:text-8xl whitespace-nowrap -rotate-8 mb-12 text-black text-shadow-[6px_6px_0px_rgba(0,0,0,0.2)]">
               鎧瑋＆司婷
             </h1>
-            <h2 className="text-5xl text-white text-shadow-[0px_0px_12px_yellow]">
+            <h2 className="text-4xl lg:text-5xl text-white text-shadow-[0px_0px_12px_yellow]">
               We're Saying " I DO "
             </h2>
             <div className="flex w-full max-lg:flex-wrap items-center justify-center gap-8 p-5">
@@ -92,12 +92,12 @@ export default function HomePage() {
       </section>
 
       <section className="flex items-center flex-col gap-12 w-full justify-center px-4 py-15 bg-wedding-bg">
-        <h2 className="text-6xl text-black italic tracking-wider">
+        <h2 className="text-5xl lg:text-6xl text-black italic tracking-wider">
           Welcome to the Wedding
         </h2>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div className="col-span-1 flex flex-col justify-center gap-12">
-            <p className="text-black text-2xl/12 tracking-wider">
+            <p className="text-black text-xl/12 lg:text-2xl/12 tracking-wider">
               兩個人選擇彼此，也選擇一起成長
               <br />
               婚姻是一段新的旅程
@@ -106,7 +106,7 @@ export default function HomePage() {
               <br />
               在歡笑與挑戰中並肩前行
             </p>
-            <p className="text-black text-2xl/12 tracking-wider relative">
+            <p className="text-black text-xl/12 lg:text-2xl/12 tracking-wider relative">
               願今天的祝福
               <br />
               成為未來每一天的力量
@@ -154,7 +154,7 @@ export default function HomePage() {
         </div>
 
         <div className="col-span-1 flex flex-col items-center justify-center p-5">
-          <p className="text-black text-2xl/12 tracking-wider text-center">
+          <p className="text-black text-xl/12 lg:text-2xl/12 tracking-wider text-center">
             感謝父母的養育與成全
             <br />
             感謝朋友一路相伴與祝福
@@ -178,7 +178,7 @@ export default function HomePage() {
               className="w-15 object-cover"
             />
           </div>
-          <p className="text-black text-2xl/12 tracking-wider text-center">
+          <p className="text-black text-xl/12 lg:text-2xl/12 tracking-wider text-center">
             以愛為名，以承諾為約
             <br />
             攜手走進人生的新階段
@@ -209,7 +209,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
         <div className="w-full grid grid-cols-12 gap-6">
           <div className="lg:col-span-7 gap-12 flex flex-col col-span-12 p-10">
-            <h2 className="text-8xl text-black font-bold">05/30</h2>
+            <h2 className="text-6xl lg:text-8xl text-black font-bold">05/30</h2>
             <Calendar year={2026} month={5} date={30} />
           </div>
           <div className="lg:col-span-5 col-span-12 flex items-center justify-center p-5">
@@ -238,20 +238,20 @@ export default function HomePage() {
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
         <div className="grid lg:grid-cols-2 cols-span-1 gap-12 p-5">
           <div className="col-span-1 flex flex-col text-black">
-            <h2 className="text-6xl font-bold tracking-wider mb-6">
+            <h2 className="text-5xl lg:text-6xl font-bold tracking-wider mb-6">
               駿崗日式創意料理
             </h2>
-            <p className="text-2xl tracking-wider leading-16">
+            <p className="text-xl lg:text-2xl tracking-wider leading-16">
               時間：2026年05月30日（六）12:00準時開席
             </p>
-            <p className="text-2xl tracking-wider leading-16">
+            <p className="text-xl lg:text-2xl tracking-wider leading-16">
               地點：521彰化縣北斗鎮光中路155號
             </p>
             <p className="text-2xl tracking-wider leading-16 mt-6">交通方式</p>
-            <p className="text-2xl tracking-wider leading-16">
+            <p className="text-xl lg:text-2xl tracking-wider leading-16">
               高鐵：搭乘至彰化高鐵站後再搭乘計程車前往
             </p>
-            <p className="text-2xl tracking-wider leading-16">
+            <p className="text-xl lg:text-2xl tracking-wider leading-16">
               開車：餐廳備有停車場，可開車前來停放
             </p>
           </div>
