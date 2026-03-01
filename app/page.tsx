@@ -213,7 +213,7 @@ export default function HomePage() {
             <Calendar year={2026} month={5} date={30} />
           </div>
           <div className="lg:col-span-5 col-span-12 flex items-center justify-center p-5">
-            <div className="">
+            <div className="w-75 overflow-hidden">
               <Image
                 src={SectionImage5}
                 alt="Section Image 5"
@@ -222,7 +222,7 @@ export default function HomePage() {
                 className="size-full object-cover"
               />
             </div>
-            <div className="">
+            <div className="w-75 overflow-hidden">
               <Image
                 src={SectionImage6}
                 alt="Section Image 6"
@@ -235,8 +235,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
-      </section> */}
+      <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
+        <div className="grid lg:grid-cols-2 cols-span-1 gap-12 p-5">
+          <div className="col-span-1 flex flex-col text-black">
+            <h2 className="text-6xl font-bold tracking-wider mb-6">
+              駿崗日式創意料理
+            </h2>
+            <p className="text-2xl tracking-wider leading-16">
+              時間：2026年05月30日（六）12:00準時開席
+            </p>
+            <p className="text-2xl tracking-wider leading-16">
+              地點：521彰化縣北斗鎮光中路155號
+            </p>
+            <p className="text-2xl tracking-wider leading-16 mt-6">交通方式</p>
+            <p className="text-2xl tracking-wider leading-16">
+              高鐵：搭乘至彰化高鐵站後再搭乘計程車前往
+            </p>
+            <p className="text-2xl tracking-wider leading-16">
+              開車：餐廳備有停車場，可開車前來停放
+            </p>
+          </div>
+          <div className="col-span-1 flex items-center justify-center">
+            <iframe
+              src="https://maps.google.com/maps?q=521%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%8C%97%E6%96%97%E9%8E%AE%E5%85%89%E4%B8%AD%E8%B7%AF155%E8%99%9F&hl=zh-TW&output=embed&z=16"
+              className="w-full h-96 rounded-2xl border-0 shadow-lg"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="駿崗日式創意料理位置地圖"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Section 6 – 出席確認表單 */}
       <section className="px-4 py-15 bg-wedding-bg">

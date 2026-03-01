@@ -58,7 +58,7 @@ export default function Calendar({
               {day !== null && (
                 <>
                   {isWedding && (
-                    <span className="absolute inset-[30%] rounded-full aspect-square border-2 border-red-400" />
+                    <span className="absolute inset-[30%] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-8 rounded-full aspect-square border-2 border-red-400" />
                   )}
                   <span className="z-10 text-xl font-bold text-black">
                     {day}
