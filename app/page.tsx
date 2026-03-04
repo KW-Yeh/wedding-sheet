@@ -19,6 +19,7 @@ import Sparkles from "@/assets/icons/sparkles.svg";
 import Heart from "@/assets/icons/heart.svg";
 import Hands from "@/assets/icons/hands.svg";
 import Rings from "@/assets/icons/rings.svg";
+import Arrow from "@/assets/icons/arrow.svg";
 
 export default function HomePage() {
   return (
@@ -26,7 +27,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-hero">
         <div className="w-full grid grid-cols-12 gap-6">
           <div className="lg:col-span-7 gap-12 flex items-center flex-col col-span-12 p-5">
-            <h1 className="text-6xl lg:text-8xl whitespace-nowrap -rotate-8 mb-12 text-black text-shadow-[6px_6px_0px_rgba(0,0,0,0.2)]">
+            <h1 className="text-7xl lg:text-8xl whitespace-nowrap -rotate-8 mb-12 text-black text-shadow-[4px_4px_0px_rgba(0,0,0,0.2)] lg:text-shadow-[6px_6px_0px_rgba(0,0,0,0.2)]">
               鎧瑋＆司婷
             </h1>
             <h2 className="text-3xl lg:text-5xl text-white text-shadow-[0px_0px_12px_yellow]">
@@ -106,6 +107,26 @@ export default function HomePage() {
               <br />
               在歡笑與挑戰中並肩前行
             </p>
+            <div className="lg:hidden w-full flex flex-col gap-5">
+              <div className="h-45 aspect-auto overflow-hidden lg:pr-10">
+                <Image
+                  src={SectionImage1}
+                  alt="Section Image 1"
+                  width={2000}
+                  height={1333}
+                  className="size-full object-cover"
+                />
+              </div>
+              <div className="h-45 aspect-auto overflow-hidden lg:pl-10">
+                <Image
+                  src={SectionImage2}
+                  alt="Section Image 2"
+                  width={2000}
+                  height={1333}
+                  className="size-full object-cover"
+                />
+              </div>
+            </div>
             <p className="text-black text-xl/12 lg:text-2xl/12 tracking-wider relative">
               願今天的祝福
               <br />
@@ -119,7 +140,7 @@ export default function HomePage() {
               />
             </p>
           </div>
-          <div className="col-span-1 flex flex-col gap-8">
+          <div className="max-lg:hidden col-span-1 flex flex-col gap-8">
             <div className="h-45 aspect-auto overflow-hidden lg:pr-10">
               <Image
                 src={SectionImage1}
@@ -209,7 +230,9 @@ export default function HomePage() {
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
         <div className="w-full grid grid-cols-12 gap-6">
           <div className="lg:col-span-7 gap-12 flex flex-col col-span-12 p-5 lg:p-10">
-            <h2 className="text-5xl lg:text-8xl text-black font-bold">05/30</h2>
+            <h2 className="text-5xl lg:text-8xl text-black font-bold">
+              2026/05/30
+            </h2>
             <Calendar year={2026} month={5} date={30} />
           </div>
           <div className="lg:col-span-5 col-span-12 flex items-center justify-center p-5">
@@ -238,7 +261,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
         <div className="grid lg:grid-cols-2 cols-span-1 gap-12 p-5">
           <div className="col-span-1 flex flex-col text-black">
-            <h2 className="text-3xl lg:text-5xl leading-16 font-bold tracking-wider mb-12">
+            <h2 className="text-4xl lg:text-5xl leading-16 font-bold tracking-wider mb-12">
               駿崗日式創意料理
             </h2>
             <span className="bg-wedding-hero tracking-wider w-fit text-white rounded-md p-1 text-lg">
@@ -253,7 +276,7 @@ export default function HomePage() {
             <p className="text-lg lg:text-2xl tracking-wider leading-16">
               521彰化縣北斗鎮光中路155號
             </p>
-            <span className="bg-wedding-hero tracking-wider w-fit text-white mt-6 rounded-md p-1 text-lg">
+            <span className="bg-wedding-hero tracking-wider w-fit text-white rounded-md p-1 text-lg">
               交通方式
             </span>
             <ul className="list-disc pl-6 mt-2">
@@ -268,7 +291,7 @@ export default function HomePage() {
           <div className="col-span-1 flex items-center justify-center">
             <iframe
               src="https://maps.google.com/maps?q=521%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%8C%97%E6%96%97%E9%8E%AE%E5%85%89%E4%B8%AD%E8%B7%AF155%E8%99%9F&hl=zh-TW&output=embed&z=16"
-              className="w-full h-96 rounded-2xl border border-solid border-gray-300 shadow-lg"
+              className="w-full aspect-square lg:h-96 rounded-2xl border border-solid border-gray-300 shadow-lg"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="駿崗日式創意料理位置地圖"
@@ -280,13 +303,63 @@ export default function HomePage() {
 
       {/* Section 6 – 出席確認表單 */}
       <section className="px-4 py-15 bg-wedding-bg">
+        <div className="w-full flex items-center justify-center mb-12">
+          <Image
+            src={Arrow}
+            alt="Arrow Icon"
+            width={400}
+            height={300}
+            className="w-5 object-cover rotate-90 max-lg:hidden"
+          />
+          <Image
+            src={Arrow}
+            alt="Arrow Icon"
+            width={400}
+            height={300}
+            className="w-5 object-cover rotate-90"
+          />
+          <Image
+            src={Arrow}
+            alt="Arrow Icon"
+            width={400}
+            height={300}
+            className="w-5 object-cover rotate-90"
+          />
+          <h1 className="text-4xl mx-2 lg:text-5xl text-gray-800 text-center tracking-wider">
+            誠摯邀情您
+          </h1>
+          <Image
+            src={Arrow}
+            alt="Arrow Icon"
+            width={400}
+            height={300}
+            className="w-5 object-cover rotate-90"
+          />
+          <Image
+            src={Arrow}
+            alt="Arrow Icon"
+            width={400}
+            height={300}
+            className="w-5 object-cover rotate-90"
+          />
+          <Image
+            src={Arrow}
+            alt="Arrow Icon"
+            width={400}
+            height={300}
+            className="w-5 object-cover rotate-90 max-lg:hidden"
+          />
+        </div>
+
         <div className="mx-auto w-full max-w-2xl">
           <div className="mb-8 text-center space-y-2">
-            <h1 className="text-3xl lg:text-5xl font-bold text-gray-800">
+            <h2 className="text-3xl lg:text-5xl tracking-wider font-bold text-gray-800">
               {formConfig.title}
-            </h1>
+            </h2>
             {formConfig.description && (
-              <p className="text-lg text-gray-500">{formConfig.description}</p>
+              <p className="text-lg tracking-wider text-gray-500">
+                {formConfig.description}
+              </p>
             )}
           </div>
           <div className="rounded-2xl bg-white p-8 shadow-lg">
