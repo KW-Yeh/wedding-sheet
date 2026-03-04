@@ -29,8 +29,8 @@ export default function HomePage() {
             <h1 className="text-6xl lg:text-8xl whitespace-nowrap -rotate-8 mb-12 text-black text-shadow-[6px_6px_0px_rgba(0,0,0,0.2)]">
               鎧瑋＆司婷
             </h1>
-            <h2 className="text-4xl lg:text-5xl text-white text-shadow-[0px_0px_12px_yellow]">
-              We're Saying " I DO "
+            <h2 className="text-3xl lg:text-5xl text-white text-shadow-[0px_0px_12px_yellow]">
+              We All Say " I DO "
             </h2>
             <div className="flex w-full max-lg:flex-wrap items-center justify-center gap-8 p-5">
               <div className="w-62 h-50 shrink-0 rounded-xl overflow-hidden relative">
@@ -69,7 +69,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="lg:col-span-5 col-span-12 flex items-center justify-center p-5">
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <div className=" max-w-125 max-h-140 w-80/100 rounded-full border border-solid border-yellow-900 overflow-hidden outline-offset-8 outline-1 outline-yellow-900">
                 <Image
                   src={HeroImage3}
@@ -84,7 +84,7 @@ export default function HomePage() {
                 alt="Sparkles"
                 width={182}
                 height={140}
-                className="absolute w-16 -top-8 right-8 object-cover"
+                className="absolute w-16 -top-15 right-5 object-cover"
               />
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function HomePage() {
       </section>
 
       <section className="flex items-center flex-col gap-12 w-full justify-center px-4 py-15 bg-wedding-bg">
-        <h2 className="text-5xl lg:text-6xl text-black italic tracking-wider">
+        <h2 className="text-3xl font-bold lg:font-normal lg:text-6xl text-black italic tracking-wider">
           Welcome to the Wedding
         </h2>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
@@ -208,8 +208,8 @@ export default function HomePage() {
 
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
         <div className="w-full grid grid-cols-12 gap-6">
-          <div className="lg:col-span-7 gap-12 flex flex-col col-span-12 p-10">
-            <h2 className="text-6xl lg:text-8xl text-black font-bold">05/30</h2>
+          <div className="lg:col-span-7 gap-12 flex flex-col col-span-12 p-5 lg:p-10">
+            <h2 className="text-5xl lg:text-8xl text-black font-bold">05/30</h2>
             <Calendar year={2026} month={5} date={30} />
           </div>
           <div className="lg:col-span-5 col-span-12 flex items-center justify-center p-5">
@@ -238,27 +238,37 @@ export default function HomePage() {
       <section className="flex items-center justify-center px-4 py-15 bg-wedding-bg">
         <div className="grid lg:grid-cols-2 cols-span-1 gap-12 p-5">
           <div className="col-span-1 flex flex-col text-black">
-            <h2 className="text-5xl lg:text-6xl font-bold tracking-wider mb-6">
+            <h2 className="text-3xl lg:text-5xl leading-16 font-bold tracking-wider mb-12">
               駿崗日式創意料理
             </h2>
-            <p className="text-xl lg:text-2xl tracking-wider leading-16">
-              時間：2026年05月30日（六）12:00準時開席
+            <span className="bg-wedding-hero tracking-wider w-fit text-white rounded-md p-1 text-lg">
+              時間
+            </span>
+            <p className="text-lg lg:text-2xl tracking-wider leading-16">
+              2026年05月30日（六）12:00準時開席
             </p>
-            <p className="text-xl lg:text-2xl tracking-wider leading-16">
-              地點：521彰化縣北斗鎮光中路155號
+            <span className="bg-wedding-hero tracking-wider w-fit text-white rounded-md p-1 text-lg">
+              地點
+            </span>
+            <p className="text-lg lg:text-2xl tracking-wider leading-16">
+              521彰化縣北斗鎮光中路155號
             </p>
-            <p className="text-2xl tracking-wider leading-16 mt-6">交通方式</p>
-            <p className="text-xl lg:text-2xl tracking-wider leading-16">
-              高鐵：搭乘至彰化高鐵站後再搭乘計程車前往
-            </p>
-            <p className="text-xl lg:text-2xl tracking-wider leading-16">
-              開車：餐廳備有停車場，可開車前來停放
-            </p>
+            <span className="bg-wedding-hero tracking-wider w-fit text-white mt-6 rounded-md p-1 text-lg">
+              交通方式
+            </span>
+            <ul className="list-disc pl-6 mt-2">
+              <li className="text-lg lg:text-2xl tracking-wider leading-16">
+                彰化高鐵站後搭乘計程車前往
+              </li>
+              <li className="text-lg lg:text-2xl tracking-wider leading-16">
+                餐廳備有停車場，可開車前來停放
+              </li>
+            </ul>
           </div>
           <div className="col-span-1 flex items-center justify-center">
             <iframe
               src="https://maps.google.com/maps?q=521%E5%BD%B0%E5%8C%96%E7%B8%A3%E5%8C%97%E6%96%97%E9%8E%AE%E5%85%89%E4%B8%AD%E8%B7%AF155%E8%99%9F&hl=zh-TW&output=embed&z=16"
-              className="w-full h-96 rounded-2xl border-0 shadow-lg"
+              className="w-full h-96 rounded-2xl border border-solid border-gray-300 shadow-lg"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="駿崗日式創意料理位置地圖"
@@ -272,7 +282,7 @@ export default function HomePage() {
       <section className="px-4 py-15 bg-wedding-bg">
         <div className="mx-auto w-full max-w-2xl">
           <div className="mb-8 text-center space-y-2">
-            <h1 className="text-4xl font-bold text-gray-800">
+            <h1 className="text-3xl lg:text-5xl font-bold text-gray-800">
               {formConfig.title}
             </h1>
             {formConfig.description && (
