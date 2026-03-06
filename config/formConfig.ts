@@ -93,7 +93,7 @@ export const formConfig: FormConfig = {
     },
     {
       id: "message",
-      label: "給予祝福 / 其餘備註",
+      label: "給予祝福 / 備註",
       type: "textarea",
       placeholder: "留下您對新人的祝福，或是其他想告知我們的事...",
       required: false,

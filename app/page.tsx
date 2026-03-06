@@ -285,6 +285,8 @@ export default function HomePage() {
               </li>
               <li className="text-lg lg:text-2xl tracking-wider leading-16">
                 餐廳備有停車場，可開車前來停放
+                <br />
+                （開車不喝酒，喝酒不開車）
               </li>
             </ul>
           </div>
